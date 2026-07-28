@@ -8,8 +8,39 @@
 </head>
 
 <body>
-    <!-- Add Your Code Here -->
-    <!-- Name and RollNo. -->
+    <style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+  body { background-color: #0d0d0d; }
+  .navbar { display: flex; justify-content: space-between; align-items: center; background: #141414; padding: 15px 30px; border-bottom: 3px solid #e50914; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+  .logo { font-size: 22px; font-weight: 900; color: #ffffff; text-transform: uppercase; letter-spacing: 2px; }
+  .logo span { color: #e50914; }
+  .nav-links { display: flex; list-style: none; gap: 20px; }
+  .nav-links a { color: #ffffff; text-decoration: none; font-weight: 600; font-size: 14px; text-transform: uppercase; transition: 0.3s; }
+  .nav-links a:hover, .nav-links a.active { color: #e50914; text-shadow: 0 0 10px #e50914; }
+  .footer-info { background: #000000; color: #ffffff; text-align: center; padding: 12px; font-size: 14px; font-weight: bold; margin-top: 15px; border-top: 1px solid #222; }
+  .footer-info span { color: #e50914; }
+</style>
+
+<nav class="navbar">
+  <div class="logo">Apex<span>Motors</span></div>
+  <ul class="nav-links">
+    <li><a href="#" class="active" onclick="setActive(this)">Home</a></li>
+    <li><a href="#" onclick="setActive(this)">Models</a></li>
+    <li><a href="#" onclick="setActive(this)">Performance</a></li>
+    <li><a href="#" onclick="setActive(this)">Contact</a></li>
+  </ul>
+</nav>
+
+<script>
+  function setActive(element) {
+    document.querySelectorAll('.nav-links a').forEach(el => el.classList.remove('active'));
+    element.classList.add('active');
+  }
+</script>
+
+<div class="footer-info">
+  Developer: <span>Hasham Saleem</span> | Roll Num: <span>514669</span>
+</div>
 </body>
 
 </html>
