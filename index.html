@@ -6,10 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+  .navbar-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 
-<body>
-    <!-- Add Your Code Here -->
-    <!-- Name and RollNo. -->
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #38bdf8;
+  }
+
+  .cta-btn {
+    background: linear-gradient(135deg, #0284c7, #38bdf8);
+    color: #ffffff;
+    padding: 0.6rem 1.4rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+  }
+
+  .student-details {
+    margin-top: 100px;
+    padding: 1rem 5%;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+  }
+</style>
+
+<nav class="navbar navbar-container">
+  <a href="#" class="logo">DevStudio.</a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <a href="#contact" class="cta-btn">Get Started</a>
+</nav>
+
+<div class="student-details navbar-container">
+  <p><strong>Name:</strong> Arqam zaid</p>
+  <p><strong>Roll Number:</strong> 515453</p>
+</div>
+    
 </body>
 
 </html>
