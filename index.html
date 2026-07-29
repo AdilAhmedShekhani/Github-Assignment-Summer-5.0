@@ -1,15 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakistan Stock Exchange</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Add Your Code Here -->
-    <!-- Name and RollNo. -->
-</body>
+<h1>Muhammad Safwans</h1>
+<header>
 
+<div class="logo">
+<h2>PSX</h2>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Markets</a></li>
+<li><a href="#">Companies</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Pakistan Stock Exchange</h1>
+
+<p>
+Track market performance, top gainers, top losers and
+company information.
+</p>
+
+<button>Explore Market</button>
+
+</div>
+
+</section>
+
+<section class="summary">
+
+<div class="card">
+<h3>KSE-100</h3>
+<h2>127,530</h2>
+<p class="green">+1.85%</p>
+</div>
+
+<div class="card">
+<h3>Market Cap</h3>
+<h2>12.8T</h2>
+<p class="green">Growing</p>
+</div>
+
+<div class="card">
+<h3>Volume</h3>
+<h2>452M</h2>
+<p>Today's Trade</p>
+</div>
+
+</section>
+
+<section class="search">
+
+<input
+type="text"
+id="search"
+placeholder="Search Company..."
+onkeyup="searchCompany()">
+
+</section>
+
+<section class="stocks">
+
+<h2>Market Watch</h2>
+
+<table id="stockTable">
+
+<thead>
+
+<tr>
+
+<th>Company</th>
+<th>Symbol</th>
+<th>Price</th>
+<th>Change</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>OGDC</td>
+<td>OGDC</td>
+<td>225</td>
+<td class="green">+2.1%</td>
+
+</tr>
+
+<tr>
+
+<td>HBL</td>
+<td>HBL</td>
+<td>138</td>
+<td class="green">+1.4%</td>
+
+</tr>
+
+<tr>
+
+<td>UBL</td>
+<td>UBL</td>
+<td>321</td>
+<td class="red">-0.7%</td>
+
+</tr>
+
+<tr>
+
+<td>ENGRO</td>
+<td>ENGRO</td>
+<td>347</td>
+<td class="green">+0.9%</td>
+
+</tr>
+
+<tr>
+
+<td>LUCKY</td>
+<td>LUCKY</td>
+<td>1132</td>
+<td class="red">-1.2%</td>
+
+</tr>
+
+<tr>
+
+<td>MCB</td>
+<td>MCB</td>
+<td>298</td>
+<td class="green">+1.8%</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<section class="lists">
+
+<div class="box">
+
+<h2>Top Gainers</h2>
+
+<ul>
+
+<li>OGDC +2.1%</li>
+<li>MCB +1.8%</li>
+<li>HBL +1.4%</li>
+<li>ENGRO +0.9%</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h2>Top Losers</h2>
+
+<ul>
+
+<li>LUCKY -1.2%</li>
+<li>UBL -0.7%</li>
+<li>ABC -0.4%</li>
+<li>XYZ -0.2%</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Pakistan Stock Exchange</h3>
+
+<p>
+Developed using HTML CSS JavaScript
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
